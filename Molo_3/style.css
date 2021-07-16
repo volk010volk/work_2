@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    background-color: khaki;
+
+    background-image: url(img/big.jpg);
+    background-repeat: repeat;
+}
+
+dd {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+dt {
+    font-weight: bold;
+    color: forestgreen;
+}
+
+ul {
+    list-style-position: inside; /* чтобы картинка была внутри */
+    list-style: none;
+}
+
+ul li::before {
+    content: "- ";
+}
+
+.winter a:visited, .summer a:visited, .autumn a:visited, .spring a:visited {
+    color: mediumblue;
+}
+
+.summer a:hover, .autumn a:hover, .winter a:hover, .spring a:hover {
+    list-style-image:  url("img/leto.png");
+    color: maroon;
+    cursor: pointer;
+}
+
+.winter a:focus, .summer a:focus, .autumn a:focus, .spring a:focus {
+    color: orangered;
+}
+
+img {
+    width: 50%;
+}
+
+/* blockquote {
+    background-image: url(img/big.jpg);
+    mask-repeat: 50px;
+} */
+
+.wrap {
+    background-image: url(img/resize.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-attachment: fixed;
+}
